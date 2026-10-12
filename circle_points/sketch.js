@@ -35,6 +35,7 @@ function draw(world) {
     r.BeginDrawing();
     r.ClearBackground(r.BLACK);
 
+    r.DrawCircleLines(centerX, centerY, radius, r.WHITE);
     for (let degree = 0; degree < 360; degree += spaceBetweenPoints) {
         const radian = m.calcRadian(degree);
         const x = m.calcXCoordinate(centerX, radius, radian);
